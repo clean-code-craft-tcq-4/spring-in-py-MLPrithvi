@@ -1,5 +1,5 @@
 import unittest
-from statistics
+import statistics.py
 
 class StatsTest(unittest.TestCase):
   def test_report_min_max_avg(self):
