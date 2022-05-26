@@ -8,10 +8,11 @@ def calculateStats(numbers):
       return value
   if not isinstance(numbers, str):
     l = len(numbers)
-    avgVal = sum(numbers) / l
-    maxVal = max(numbers)
-    minVal = min(numbers)
-    return avgVal,minVal,maxVal
+    if l != 0:
+      avgVal = sum(numbers) / l
+      maxVal = max(numbers)
+      minVal = min(numbers)
+      return avgVal,minVal,maxVal
 
 # def checkNumeric(numbers):
 #   l = len(numbers)
