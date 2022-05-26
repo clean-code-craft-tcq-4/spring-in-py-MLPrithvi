@@ -1,7 +1,7 @@
 import math
 
 def calculateStats(numbers):
-  if numbers == 0:
+  if bool(numbers):
     avgVal = math.nan
     minVal = math.nan
     maxVal = math.nan
