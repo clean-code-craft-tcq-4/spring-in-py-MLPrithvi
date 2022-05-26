@@ -1,5 +1,5 @@
 def calculateStats(numbers):
-  if isnan(numbers):
+  if type(numbers) == str:
     return True
   elif isnumeric(numbers):
     l = len(numbers)
