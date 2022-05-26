@@ -1,18 +1,18 @@
 import math as m
 
 def calculateStats(numbers):
-  if isinstance(numbers, str):
+  if type(numbers) == list:
     l = len(numbers)
     for i in range(l):
-      value = m.isnan(i)
-      return value
-  if not isinstance(numbers, str):
-    l = len(numbers)
-    if l != 0:
-      avgVal = sum(numbers) / l
-      maxVal = max(numbers)
-      minVal = min(numbers)
-      return avgVal,minVal,maxVal
+      if type(numbers[i]) == str:
+        value = m.isnan(i)
+        print(value)
+        return value
+      elif (type(numbers[i]) == float) or (type(numbers[i]) == int) and (l != 0):
+        avgVal = sum(numbers) / l
+        maxVal = max(numbers)
+        minVal = min(numbers)
+        return avgVal,minVal,maxVal
 
 # def EmailAlert(e):
 #   i = 0
