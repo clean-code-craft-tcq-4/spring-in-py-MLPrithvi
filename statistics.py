@@ -1,7 +1,7 @@
 def calculateStats(numbers):
   if type(numbers) == str:
     return True
-  elif isnumeric(numbers):
+  elif type(numbers) == float:
     l = len(numbers)
     avgVal = sum(numbers) / l
     maxVal = max(numbers)
