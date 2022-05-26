@@ -1,8 +1,4 @@
-import math
-
 def calculateStats(numbers):
-#   if bool(numbers):
-#     return math.nan
   if numbers != 0:
     l = len(numbers)
     avgVal = sum(numbers) / l
@@ -11,11 +7,14 @@ def calculateStats(numbers):
   return avgVal,minVal,maxVal
 
 def EmailAlert():
-  return 12
+  i = 0
+  i += 1
+  return i
 
 def LEDAlert():
   return 3
-  
 
-# def checkAndAlert(numbers):
+def StatsAlerter(Thres, Alert):
+  def checkAndAlert(numbers):
+    
   
