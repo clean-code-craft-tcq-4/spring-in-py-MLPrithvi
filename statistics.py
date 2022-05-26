@@ -5,4 +5,4 @@ def calculateStats(numbers):
   avgVal = mean(numbers)
   maxVal = max(numbers)
   minVal = min(numbers)
-  return 4.525,minVal,maxVal
+  return avgVal,minVal,maxVal
