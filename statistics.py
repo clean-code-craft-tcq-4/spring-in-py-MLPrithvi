@@ -6,7 +6,7 @@ def calculateStats(numbers):
     for i in range(l):
       value = m.isnan(i)
       return value
-  else:
+  if numbers.isnumeric():
     l = len(numbers)
     avgVal = sum(numbers) / l
     maxVal = max(numbers)
