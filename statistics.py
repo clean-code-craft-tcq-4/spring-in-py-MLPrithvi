@@ -1,12 +1,15 @@
 def calculateStats(numbers):
-  if type(numbers) == str:
-    return str(True)
-  elif type(numbers) == float:
-    l = len(numbers)
-    avgVal = sum(numbers) / l
-    maxVal = max(numbers)
-    minVal = min(numbers)
-    return avgVal,minVal,maxVal
+  l = len(numbers)
+  avgVal = sum(numbers) / l
+  maxVal = max(numbers)
+  minVal = min(numbers)
+  return avgVal,minVal,maxVal
+
+def CheckNumeric(numbers):
+  l = len(numbers)
+  for i in range(l):
+    value = isinstance(i, str)
+    return value
 
 # def EmailAlert():
 #   i = 0
