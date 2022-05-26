@@ -10,6 +10,7 @@ def calculateStats(numbers):
     minVal = min(numbers)
   return avgVal,minVal,maxVal
 
+def EmailAlert():
 # def StatsAlerter(Threshold, Alert):
   
 
