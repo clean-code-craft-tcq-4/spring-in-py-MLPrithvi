@@ -9,12 +9,15 @@ class StatsTest(unittest.TestCase):
     self.assertAlmostEqual(computedStats[2], 8.9, delta=epsilon)
     self.assertAlmostEqual(computedStats[1], 1.5, delta=epsilon)
 
-#   def test_avg_is_nan_for_empty_input(self):
-#     computedStats = statistics.calculateStats([])
-#     # All fields of computedStats (average, max, min) must be
-#     # nan (not-a-number), as defined in the math package
-#     # Design the assert here.
-#     # Use nan and isnan in https://docs.python.org/3/library/math.html
+  def test_avg_is_nan_for_empty_input(self):
+    computedStats = statistics.calculateStats([0])
+    self.assertAlmostEqual(isnan(computedStats[0]))
+    self.assertAlmostEqual(isnan(computedStats[2]))
+    self.assertAlmostEqual(isnan(computedStats[1]))
+    # All fields of computedStats (average, max, min) must be
+    # nan (not-a-number), as defined in the math package
+    # Design the assert here.
+    # Use nan and isnan in https://docs.python.org/3/library/math.html
 
 #   def test_raise_alerts_when_max_above_threshold(self):
 #     emailAlert = EmailAlert()
