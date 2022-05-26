@@ -1,5 +1,3 @@
-import math
-
 def calculateStats(numbers):
   if numbers == 0:
     avgVal = NAN
