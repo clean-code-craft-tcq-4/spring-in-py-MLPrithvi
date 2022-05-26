@@ -6,7 +6,6 @@ def calculateStats(numbers):
     for i in range(l):
       if type(numbers[i]) == str:
         value = m.isnan(i)
-        print(value)
         return value
       elif (type(numbers[i]) == float) or (type(numbers[i]) == int) and (l != 0):
         avgVal = sum(numbers) / l
