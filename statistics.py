@@ -14,12 +14,6 @@ def calculateStats(numbers):
       minVal = min(numbers)
       return avgVal,minVal,maxVal
 
-# def checkNumeric(numbers):
-#   l = len(numbers)
-#   for i in range(l):
-#     value = m.isnan(i)
-#     return value
-
 # def EmailAlert(e):
 #   i = 0
 #   if 
