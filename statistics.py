@@ -1,6 +1,6 @@
 def calculateStats(numbers):
   if type(numbers) == str:
-    return True
+    return str(True)
   elif type(numbers) == float:
     l = len(numbers)
     avgVal = sum(numbers) / l
