@@ -1,7 +1,7 @@
 def calculateStats(numbers):
   if isnan(numbers):
     return True
-  elif:
+  elif isnumeric(numbers):
     l = len(numbers)
     avgVal = sum(numbers) / l
     maxVal = max(numbers)
