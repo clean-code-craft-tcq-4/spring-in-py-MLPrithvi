@@ -6,15 +6,15 @@ def calculateStats(numbers):
     minVal = min(numbers)
   return avgVal,minVal,maxVal
 
-def EmailAlert():
-  i = 0
-  i += 1
-  return i
+# def EmailAlert():
+#   i = 0
+#   i += 1
+#   return i
 
-def LEDAlert():
-  return 3
+# def LEDAlert():
+#   return 3
 
-def StatsAlerter(Thres, Alert):
-  def checkAndAlert(numbers):
+# def StatsAlerter(Thres, Alert):
+#   def checkAndAlert(numbers):
     
   
