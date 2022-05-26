@@ -5,7 +5,7 @@ def calculateStats(numbers):
   minVal = min(numbers)
   return avgVal,minVal,maxVal
 
-def CheckNumeric(numbers):
+def checkNumeric(numbers):
   l = len(numbers)
   for i in range(l):
     value = isinstance(i, str)
