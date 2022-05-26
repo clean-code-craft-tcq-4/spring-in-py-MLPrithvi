@@ -1,8 +1,10 @@
+import math
+
 def calculateStats(numbers):
   if numbers == 0:
-    avgVal = "nan"
-    minVal = "nan"
-    maxVal = "nan"
+    avgVal = math.nan
+    minVal = math.nan
+    maxVal = math.nan
   return avgVal,minVal,maxVal
 #   if numbers != 0:
 #     l = len(numbers)
