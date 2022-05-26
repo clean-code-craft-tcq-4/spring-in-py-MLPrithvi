@@ -1,3 +1,5 @@
+import math as m
+
 def calculateStats(numbers):
   l = len(numbers)
   avgVal = sum(numbers) / l
@@ -8,7 +10,7 @@ def calculateStats(numbers):
 def checkNumeric(numbers):
   l = len(numbers)
   for i in range(l):
-    value = isinstance(i, str)
+    value = m.isnan(i)
     return value
 
 # def EmailAlert():
