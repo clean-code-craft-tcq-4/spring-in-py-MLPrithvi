@@ -1,7 +1,7 @@
 import math as m
 
 def calculateStats(numbers):
-  if type(numbers) == str:
+  if isinstance(numbers, str):
     l = len(numbers)
     for i in range(l):
       value = m.isnan(i)
@@ -19,18 +19,18 @@ def calculateStats(numbers):
 #     value = m.isnan(i)
 #     return value
 
-def EmailAlert(e):
-  i = 0
-  if 
-  i += 1
-  return i
+# def EmailAlert(e):
+#   i = 0
+#   if 
+#   i += 1
+#   return i
 
-def LEDAlert(j):
+# def LEDAlert(j):
   
 
-def StatsAlerter(Thres, Alert):
-  def checkAndAlert(numbers):
-    if numbers > Thres:
+# def StatsAlerter(Thres, Alert):
+#   def checkAndAlert(numbers):
+#     if numbers > Thres:
       
     
   
