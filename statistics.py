@@ -1,7 +1,7 @@
 import math as m
 
 def calculateStats(numbers):
-  if isinstance(numbers, str):
+  if type(numbers) == str:
     l = len(numbers)
     for i in range(l):
       value = m.isnan(i)
