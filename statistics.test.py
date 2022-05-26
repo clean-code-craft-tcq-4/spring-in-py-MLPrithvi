@@ -14,7 +14,7 @@ class StatsTest(unittest.TestCase):
   def test_avg_is_nan_for_empty_input(self):
     computedStats = statistics.calculateStats([0])
     print("for Zero : ",computedStats)
-    self.assertAlmostEqual(m.isnan(computedStats[0]), True)
+    self.assertAlmostEqual(m.isnan(float(computedStats[0])), True)
     self.assertAlmostEqual(m.isnan(computedStats[2]), True)
     self.assertAlmostEqual(m.isnan(computedStats[1]), True)
     # All fields of computedStats (average, max, min) must be
