@@ -1,4 +1,5 @@
 from statistics import *
+import statistics
 
 def calculateStats(numbers):
   avgVal = statistics.mean(numbers)
