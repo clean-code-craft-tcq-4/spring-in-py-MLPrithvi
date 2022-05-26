@@ -5,14 +5,13 @@ import math as m
 class StatsTest(unittest.TestCase):
 #   def test_report_min_max_avg(self):
 #     computedStats = statistics.calculateStats([1.5, 8.9, 3.2, 4.5])
-#     print("for Non Numbers : ",computedStats)
 #     epsilon = 0.001
 #     self.assertAlmostEqual(computedStats[0], 4.525, delta=epsilon)
 #     self.assertAlmostEqual(computedStats[2], 8.9, delta=epsilon)
 #     self.assertAlmostEqual(computedStats[1], 1.5, delta=epsilon)
 
   def test_avg_is_nan_for_empty_input(self):
-    computedStats = statistics.calculateStats([0])
+    computedStats = statistics.calculateStats([])
     print("for Zero : ",computedStats)
     self.assertAlmostEqual(m.isnan(float(computedStats[0])), True)
     self.assertAlmostEqual(m.isnan(computedStats[2]), True)
