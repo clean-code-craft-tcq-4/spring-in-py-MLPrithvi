@@ -1,3 +1,5 @@
+from statistics import *
+
 def calculateStats(numbers):
   avgVal = statistics.mean(numbers)
   maxVal = max(numbers)
